@@ -20,8 +20,22 @@
                 </TextBlock.RenderTransform>
             </TextBlock>
         </Label>
+
+        <Label  HorizontalAlignment="Left" Height="60" Margin="48,264,0,0" VerticalAlignment="Top" Width="192">
+            <TextBlock Text="Total Charge after adding &#xA;the wrap charge ($5):" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.789,0.825" Height="50" Width="183" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="1"/>
+                        <SkewTransform AngleY="-0.52"/>
+                        <RotateTransform/>
+                        <TranslateTransform Y="-1.185"/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+        </Label>
         <TextBlock Name="totalChargeTextBox" HorizontalAlignment="Left" Height="23" Margin="203,203,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75"/>
         <TextBlock Name="totalPaymentTextBlock" HorizontalAlignment="Left" Height="23" Margin="164,167,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75"/>
+        <TextBlock Name="totalChargeWithWrapTextBlock" HorizontalAlignment="Left" Height="23" Margin="203,271,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75"/>
         <TextBox Name="productTextBox" HorizontalAlignment="Left" Height="24" Margin="122,37,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="96"/>
         <TextBox Name="priceTextBox" HorizontalAlignment="Left" Height="24" Margin="122,78,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="77"/>
         <TextBox x:Name="quantityTextBox" HorizontalAlignment="Left" Height="24" Margin="122,119,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="77"/>

@@ -37,6 +37,9 @@ namespace ProductApps
                 double  totalWithDeliveryCost = (double)cProduct.TotalPayment + 25;
                 totalChargeTextBox.Text = Convert.ToString(totalWithDeliveryCost);
 
+                double totalWithDeliveryAndWrapCost = (double)cProduct.TotalPayment + 25 +5;
+                totalChargeWithWrapTextBlock.Text = Convert.ToString(totalWithDeliveryAndWrapCost);
+
             }
             catch (FormatException)
             {
@@ -51,6 +54,7 @@ namespace ProductApps
             quantityTextBox.Text = "";
             totalPaymentTextBlock.Text = "";
             totalChargeTextBox.Text = "";
+            totalChargeWithWrapTextBlock.Text = "";
         }
 
         private void closeButton_Click(object sender, RoutedEventArgs e)
